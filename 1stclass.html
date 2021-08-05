@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <body>
+            <form name="myscreen">
+            <input type="text" name="num1" placeholder="enter 1st number">
+            <input type="text" name="num2" placeholder="enter 2nd number">
+            <input type="text" name="num3" placeholder="result">
+            <input type="button" value="add"onclick="f1()">
+            <input type="button" value="sub"onclick="f2()">
+            <input type="button" value="mul"onclick="f3()">
+            <input type="button" value="div"onclick="f4()">
+            <input type="button" value="squre"onclick="f5()">
+            <input type="button" value="cube"onclick="f6()">
+            </form>
+            
+
+            <script>
+                function f1()
+                {
+                    var a =document.myscreen.num1.value;
+                    var b =document.myscreen.num2.value;
+                    var c =parseInt(a)+parseInt(b);
+                    document.myscreen.num3.value=c;
+                      }
+                      function f2()
+                {
+                    var a =document.myscreen.num1.value;
+                    var b =document.myscreen.num2.value;
+                    var c =parseInt(a)-parseInt(b);
+                    document.myscreen.num3.value=c;
+                }
+                function f3()
+                {
+                    var a =document.myscreen.num1.value;
+                    var b =document.myscreen.num2.value;
+                    var c =parseInt(a)*parseInt(b);
+                    document.myscreen.num3.value=c;
+                }
+                function f4()
+                {
+                    var a =document.myscreen.num1.value;
+                    var b =document.myscreen.num2.value;
+                    var c =parseInt(a)/parseInt(b);
+                }
+                function f5()
+                {
+                    var a =document.myscreen.num1.value;
+                    
+                    var c =parseInt(a)*parseInt(a);
+                    document.myscreen.num3.value=c;
+                }
+                function f6()
+                {
+                    var a =document.myscreen.num1.value;
+                    
+                    var c =parseInt(a)*parseInt(a)*parseInt(a);
+                    document.myscreen.num3.value=c;
+                }
+            </script>
+        </body>
+
+    </head>
+</html>
